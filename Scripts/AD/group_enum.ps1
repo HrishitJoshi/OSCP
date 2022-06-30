@@ -25,5 +25,6 @@ $Result = $Searcher.FindAll()
 
 Foreach($obj in $Result)
 {
-    $obj.Properties.name
+    $obj.Properties.name #$obj.Properties.member
+
 }
