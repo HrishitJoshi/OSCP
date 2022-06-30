@@ -17,6 +17,9 @@ $objDomain = New-Object System.DirectoryServices.DirectoryEntry
 $Searcher.SearchRoot = $objDomain
 
 $Searcher.filter="(objectClass=Group)"
+# After using the above filter try enumerating the specific group by using
+# $Searcher.filter="(name=Secret_Group)"
+
 
 $Result = $Searcher.FindAll()
 
